@@ -9,7 +9,7 @@ const SteamStrategy=require('passport-steam').Strategy;
 const app=express();
 const PORT=process.env.PORT||10000;
 const FRONTEND=process.env.FRONTEND_URL||'https://dexer.site.je';
-const BACKEND=(process.env.BACKEND_URL||'https://dexo-auth-backend.onrender.com').replace(/\\/$/,'');
+const BACKEND=(process.env.BACKEND_URL||'https://dexo-auth-backend.onrender.com').replace(/\/$/, '');
 const CLIENT_ID=process.env.GOOGLE_CLIENT_ID;
 
 app.set('trust proxy',1);
